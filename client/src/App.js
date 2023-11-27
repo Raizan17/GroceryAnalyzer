@@ -13,6 +13,7 @@ import Beverage from "./pages/Beverage";
 import Fruits from "./pages/Fruits";
 import Vegetables from "./pages/Vegetables";
 import Meat from "./pages/Meat";
+import Cart from "./pages/Cart";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/Fruits",
         element: <Fruits />,
+      },
+      {
+        path: "/cart",
+        element: <Cart />,
       },
     ],
   },

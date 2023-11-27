@@ -46,8 +46,8 @@ const Navbar = () => {
             </Link>
           )}
           <span className="write">
-            <Link className="link" to="/write">
-              Write
+            <Link className="link" to="/cart">
+              Cart
             </Link>
           </span>
         </div>

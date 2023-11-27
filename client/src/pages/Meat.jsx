@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/bakery.css'; // Import your CSS file
-import Apple from "../img/apple.jpg";
-import Banana from "../img/banana.jpg";
+import Chicken from "../img/chicken.jpg";
+import Beef from "../img/beef.jpg";
 import Walmart from "../img/walmart.png";
 import Freshco from "../img/freshco.png";
 import Real from "../img/real.png";
@@ -11,17 +11,17 @@ const Meat = () => {
   return (
     <div>
 
-      {/* APPLE */}
+      {/* CHICKEN */}
 
     <div className="centered-box">
       {/* First Row: Big Image */}
       <div className="rowA">
-        <img src={Apple} alt="" className="big-image" />
+        <img src={Chicken} alt="" className="big-image" />
       </div>
 
       {/* Second Row: Text */}
       <div className="rowA">
-        <p>APPLE</p>
+        <p>CHICKEN</p>
       </div>
 
      {/* Columns*/}
@@ -359,18 +359,18 @@ const Meat = () => {
 
   </div>
 
-    {/* BANANA*/}
+    {/* BEEF */}
   
   
     <div className="centered-box">
       {/* First Row: Big Image */}
       <div className="rowA">
-        <img src={Banana} alt="" className="big-image" />
+        <img src={Beef} alt="" className="big-image" />
       </div>
 
       {/* Second Row: Text */}
       <div className="rowA">
-        <p>BANANA</p>
+        <p>BEEF</p>
       </div>
 
      {/* Columns*/}
