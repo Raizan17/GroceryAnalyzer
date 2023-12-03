@@ -59,3 +59,43 @@ export const logout = (req, res) => {
     secure:true
   }).status(200).json("User has been logged out.")
 };
+
+
+/*
+
+export const cart = (req, res) => {
+
+  const q1 = "INSERT INTO cart(`Price`,`Quantity`) VALUES (?)";
+  console.log("first");
+  const values = [req.body.Price, req.body.Quantity];
+  console.log("second");
+  db.query(q1, [values], (err, data) => {
+    if (err) return res.status(500).json(err);
+    return res.status(200).json("Item has been added to Cart.");
+  });
+
+};
+
+*/
+
+export const cart = (req, res) => {
+  const cartItem = req.body; // Assuming the frontend sends a single item
+
+  const { Item_Name,Price, Quantity } = cartItem;
+
+  if (Price === undefined || Quantity === undefined) {
+    return res.status(400).json("Price or Quantity missing for an item.");
+  }
+
+  const q1 = "INSERT INTO cart(`Item_Name`,`Price`,`Quantity`) VALUES (?, ?, ?)";
+  const values = [Item_Name, Price, Quantity];
+
+  db.query(q1, values, (err, data) => {
+    if (err) {
+      console.error("Database insertion error:", err);
+      return res.status(500).json(err);
+    } else {
+      return res.status(200).json("Item has been added to Cart.");
+    }
+  });
+};

@@ -1,7 +1,7 @@
 import {db} from "../db.js"
 
 export const addPost = (req,res) => {
-  const q ="SELECT * FROM items WHERE Item_id='APFR1'";
+  const q ="SELECT * FROM items WHERE Item_id='ONFR1'";
 
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
@@ -10,7 +10,7 @@ export const addPost = (req,res) => {
   });
 };
  export const addPost2 = (req,res) => {
-  const q ="SELECT * FROM items WHERE Item_Name='Apple' AND items.Location_id = 'CLGDT'";
+  const q ="SELECT * FROM items WHERE Item_Name='Onions' AND items.Location_id = 'CLGDT'";
 
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
@@ -21,7 +21,7 @@ export const addPost = (req,res) => {
 
 export const addPost3 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Apple' AND items.Location_id = 'CLGNW'";
+  const q ="SELECT * FROM items WHERE Item_Name='Onions' AND items.Location_id = 'CLGNW'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -30,7 +30,7 @@ export const addPost3 = (req,res) => {
 };
 export const addPost4 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Apple' AND items.Location_id = 'CLGNE'";
+  const q ="SELECT * FROM items WHERE Item_Name='Onions' AND items.Location_id = 'CLGNE'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -39,7 +39,7 @@ export const addPost4 = (req,res) => {
 };
 export const addPost5 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Apple' AND items.Location_id = 'CLGSW'";
+  const q ="SELECT * FROM items WHERE Item_Name='Onions' AND items.Location_id = 'CLGSW'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -48,7 +48,7 @@ export const addPost5 = (req,res) => {
 };
 export const addPost6 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Apple' AND items.Location_id = 'CLGSE'";
+  const q ="SELECT * FROM items WHERE Item_Name='Onions' AND items.Location_id = 'CLGSE'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -61,7 +61,7 @@ export const addPost6 = (req,res) => {
 
 
 export const addPost7 = (req,res) => {
-  const q ="SELECT * FROM items WHERE Item_id='BNFR1'";
+  const q ="SELECT * FROM items WHERE Item_id='CRFR1'";
 
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
@@ -70,7 +70,7 @@ export const addPost7 = (req,res) => {
   });
 };
  export const addPost8 = (req,res) => {
-  const q ="SELECT * FROM items WHERE Item_Name='Banana' AND items.Location_id = 'CLGDT'";
+  const q ="SELECT * FROM items WHERE Item_Name='Carrot' AND items.Location_id = 'CLGDT'";
 
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
@@ -81,7 +81,7 @@ export const addPost7 = (req,res) => {
 
 export const addPost9 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Banana' AND items.Location_id = 'CLGNW'";
+  const q ="SELECT * FROM items WHERE Item_Name='Carrot' AND items.Location_id = 'CLGNW'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -90,7 +90,7 @@ export const addPost9 = (req,res) => {
 };
 export const addPost10 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Banana' AND items.Location_id = 'CLGNE'";
+  const q ="SELECT * FROM items WHERE Item_Name='Carrot' AND items.Location_id = 'CLGNE'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -99,7 +99,7 @@ export const addPost10 = (req,res) => {
 };
 export const addPost11 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Banana' AND items.Location_id = 'CLGSW'";
+  const q ="SELECT * FROM items WHERE Item_Name='Carrot' AND items.Location_id = 'CLGSW'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 
@@ -108,7 +108,7 @@ export const addPost11 = (req,res) => {
 };
 export const addPost12 = (req,res) => {
   
-  const q ="SELECT * FROM items WHERE Item_Name='Banana' AND items.Location_id = 'CLGSE'";
+  const q ="SELECT * FROM items WHERE Item_Name='Carrot' AND items.Location_id = 'CLGSE'";
   db.query(q, [req.query.Item_Type], (err,data) => {
     if(err) return res.send(err)
 

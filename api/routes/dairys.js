@@ -1,6 +1,6 @@
 import express from "express"
 import { addPost,addPost2,addPost3, addPost4, addPost5, addPost6,
-    addPost7, addPost8, addPost9, addPost10,addPost11,addPost12 } from "../controllers/post.js";
+    addPost7, addPost8, addPost9, addPost10,addPost11,addPost12 } from "../controllers/dairy.js";
 
 
 
