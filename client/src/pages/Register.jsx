@@ -20,9 +20,12 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
+      console.log("Here at one");
       await axios.post("/auth/register", inputs);
+      console.log("Here at two");
       navigate("/login");
     } catch (err) {
+      console.log("Here at three");
       setError(err.response.data);
     }
   };

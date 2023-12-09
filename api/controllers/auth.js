@@ -60,7 +60,6 @@ export const logout = (req, res) => {
   }).status(200).json("User has been logged out.")
 };
 
-
 /*
 
 export const cart = (req, res) => {
@@ -84,7 +83,7 @@ export const cart = (req, res) => {
   const { Item_Name,Price, Quantity } = cartItem;
 
   if (Price === undefined || Quantity === undefined) {
-    return res.status(400).json("Price or Quantity missing for an item.");
+    return res.status(400).json({message:"Price or Quantity missing for an item."});
   }
 
   const q1 = "INSERT INTO cart(`Item_Name`,`Price`,`Quantity`) VALUES (?, ?, ?)";
@@ -95,7 +94,7 @@ export const cart = (req, res) => {
       console.error("Database insertion error:", err);
       return res.status(500).json(err);
     } else {
-      return res.status(200).json("Item has been added to Cart.");
+      return res.status(200).json({message:"Item has been added to Cart."});
     }
   });
 };
